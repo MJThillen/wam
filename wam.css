@@ -34,19 +34,19 @@ body, h2 {
 
 /* Header Elements*/
 #header {
-    padding: 40px;
-	height: 150px;
-	background-color: #3f7e31;
-	color: #eeeeee;
-    border-radius: 10px;
+    background-color: #3f7e31;
     border: 5px dotted #ffffff;
+    border-radius: 10px;
+    color: #eeeeee;
+	height: 150px;
+    padding: 40px;
 }
 
 #welcome {
     background-image: url('welcome.png');
     border-radius: 10px;
-    width: 528px;
     height: 75px;
+    width: 528px;
 }
 
 #scoreText {
@@ -55,84 +55,84 @@ body, h2 {
 }
 
 .button {
-	height: 20px;
-	width: 80px;
 	background-image: url('button.png');
 	border-radius: 8px;
 	color: #eeeeee;
 	cursor: pointer;
+    display: inline-block;
+	height: 20px;
     margin-left: 15px;
     padding: 5px;
-    display: inline-block;
+	width: 80px;
 }
 
 /* Rules Window */
 #rulesWindow {
-    position: fixed;
     background-color: #3f7e31;
+    border: 5px dotted #ffffff;
+    border-radius: 10px;
+    display: none;
+    position: fixed;
     margin: 20px 50px;
     max-width: 400px;
-    text-align: left;
     padding: 20px;
-    border-radius: 10px;
+    text-align: left;
     z-index: 1;
-    border: 5px dotted #ffffff;
-    display: none;
 }
 
 /* Game over Window */
 #gameOver {
     position: fixed;
-    width: 100%;
     top: 248px;
+    width: 100%;
     z-index: 2;
 }
 
 #congratulations {
-    position: relative;
     background-color: #3f7e31;
-    width: 30%;
-    max-height: 250px;
-    padding: 20px;
-    border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    z-index: 2;
+    border-bottom-right-radius: 10px;
+    border-bottom: 5px dotted #ffffff;
     border-left: 5px dotted #ffffff;
     border-right: 5px dotted #ffffff;
-    border-bottom: 5px dotted #ffffff;
     display: none;
+    max-height: 250px;
+    padding: 20px;
+    position: relative;
+    width: 30%;
+    z-index: 2;
 }
 
 /* Mole Patch and moles */
 
 #molePatch {
-    display: inline-block;
     background-image: url('grass.png');
     background-repeat: no-repeat;
-    width: 818px;
+    cursor: url('hammer.png'), pointer;
+    display: inline-block;
     height: 700px;
+    width: 818px;
 }
 
 #moleTable {
-    position: relative;
-    margin-top: 60px;
     margin-left: 25px;
+    margin-top: 60px;
+    position: relative;
 }
 
 .mole {
 	background-image: url('hole.png');
-	width: 150px;
 	height: 150px; 
-	cursor: url('hammer.png'), pointer;
+	width: 150px;
 }
 
 .moleImage {
     background-image: url('mole.png');
     background-repeat: no-repeat;
     background-position: center center;
-    width: 150px;
-    height: 150px;
     display: none;
+    height: 150px;
+    width: 150px;
 }
 
 .spacer {
