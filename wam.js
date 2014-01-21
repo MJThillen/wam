@@ -34,11 +34,15 @@ $(document).ready(function () {
     var MoleGroup = function (inMoles) {
         var moles = inMoles;
 
+        var createMoleName = function (mole) {
+            return '#mole' + mole;
+        }
+
         /* Hides all moles. */
         var hideMoles = function () {
             var moleName;
             moles.forEach(function (mole) {
-                moleName = '#mole' + mole;
+                moleName = createMoleName(mole);
                 $(moleName).hide("puff");
                 $(moleName).unbind("mousedown");
             });
@@ -46,7 +50,7 @@ $(document).ready(function () {
 
         /* Hides/Explodes a single mole when clicked. */
         var hideMole = function (mole) {
-            var moleName = '#mole' + mole;
+            var moleName = createMoleName(mole);
             /* When the mole explodes, it's gross. */
             $(moleName).hide("explode", {pieces: 144}, 250);
             $(moleName).unbind("mousedown");
@@ -65,7 +69,7 @@ $(document).ready(function () {
             var moleName;
 
             moles.forEach(function (mole) {
-                moleName = '#mole' + mole;
+                moleName = createMoleName(mole);
                 $(moleName).one("mousedown", function () { handleClick(mole); });
                 $(moleName).show("puff");
             });
