@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<title>MJ's Whack-a-mole!</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="wam.js"></script>
+		<link rel="stylesheet" type="text/css" href="wam.css">
+	</head>
+	<body>
+		<div class="moleContainer">
+            <!-- Header with Score and Buttons -->
+			<div id="header">
+				<div id="welcome"></div>
+                <div class="spacer"></div>
+                <div id="scoreText">Score: <span id="score">0</span></div>
+                <div id="buttonBar">
+                    <div id="rulesButton" class="button">Rules</div>
+                    <div id="startButton" class="button">Start!</div>
+                </div>
+			</div>
+            <!-- Game Completion Dialog -->
+            <div id="gameOver">
+                <div id="congratulations">
+                    <h2>Congratulations, you&nbsp;win!</h2>
+                    <div id="winButton" class="button">Hooray!</div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <!-- Rules Popup -->
+            <div id="rulesWindow">
+                <h2>Rules of Play / Instructions:</h2>
+                <p> Whack-a-mole is a game of reflexes.  Over the course of 30 seconds, moles will continually appear and disappear.  Your mission, if you choose to accept it, is to whack as many moles as possible in that period of time.</p>
+                <ul>
+                    <li> Five moles will appear at a time, <br />
+                         and disappear after a moment. </li>
+                    <li> Moles that are "whacked" will explode. </li>
+                    <li> Moles that are not whacked will disappear. </li>
+                    <li> For each mole that you whack, you earn one point. </li>
+                    <li> You always win! <br />
+                        (If you hit zero moles, you win at being nice.)</li>
+                </ul>
+            </div>
+            <!-- Game Board -->
+			<div id="molePatch">
+                <table id="moleTable">
+                    <tr>
+                        <td><div class="mole" id="1"><div id="mole1" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="2"><div id="mole2" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="3"><div id="mole3" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="4"><div id="mole4" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="5"><div id="mole5" class='moleImage'></div></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="mole" id="6"><div id="mole6" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="7"><div id="mole7" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="8"><div id="mole8" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="9"><div id="mole9" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="10"><div id="mole10" class='moleImage'></div></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="mole" id="11"><div id="mole11" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="12"><div id="mole12" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="13"><div id="mole13" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="14"><div id="mole14" class='moleImage'></div></div></td>
+                        <td><div class="mole" id="15"><div id="mole15" class='moleImage'></div></div></td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+	</body>
+</HTML>
