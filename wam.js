@@ -36,7 +36,7 @@ $(document).ready(function () {
 
         var createMoleName = function (mole) {
             return '#mole' + mole;
-        }
+        };
 
         /* Hides all moles. */
         var hideMoles = function () {
@@ -126,7 +126,7 @@ $(document).ready(function () {
         }, 3000);
 
     }
-    
+
     /* Click handler for the start button. Closes the
      * rules and congratulations window to prevent
      * game board overlap, then starts the game. */
